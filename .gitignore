@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+.env
+
+build/
+dist/
+
+blackjack_ai.db
+*.sqlite3
