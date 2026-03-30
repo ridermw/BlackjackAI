@@ -19,8 +19,6 @@ from blackjack_ai.api.service import RoundParticipantRecord
 from blackjack_ai.api.service import RoundRecord
 from blackjack_ai.api.service import SeatRecord
 from blackjack_ai.api.service import TableRecord
-from blackjack_ai.db import database_connection
-from blackjack_ai.db import initialize_database
 from blackjack_ai.engine import ActionType
 from blackjack_ai.engine import Bet
 from blackjack_ai.engine import Card
@@ -40,6 +38,9 @@ from blackjack_ai.engine import RuleConfig
 from blackjack_ai.engine import TableSessionStatus
 from blackjack_ai.engine import TurnActor
 from blackjack_ai.engine import TurnState
+
+from .db import database_connection
+from .db import initialize_database
 
 
 @dataclass(slots=True)

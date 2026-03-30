@@ -22,10 +22,10 @@ from blackjack_ai.api.service import GameService
 from blackjack_ai.config import Settings
 from blackjack_ai.config import get_settings
 from blackjack_ai.engine import ParticipantType
-from blackjack_ai.db import database_backend
-from blackjack_ai.db import initialize_database
-from blackjack_ai.db import probe_database
-from blackjack_ai.repository import SqliteGameRepository
+from blackjack_ai.persistence import SqliteGameRepository
+from blackjack_ai.persistence import database_backend
+from blackjack_ai.persistence import initialize_database
+from blackjack_ai.persistence import probe_database
 
 
 class DatabaseStatus(BaseModel):

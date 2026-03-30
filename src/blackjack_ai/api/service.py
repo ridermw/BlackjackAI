@@ -51,7 +51,7 @@ from blackjack_ai.api.schemas import StartRoundRequest
 
 
 if TYPE_CHECKING:
-    from blackjack_ai.repository import GameRepository
+    from blackjack_ai.persistence import GameRepository
 
 
 class ApiServiceError(Exception):

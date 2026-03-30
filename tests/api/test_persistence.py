@@ -18,7 +18,7 @@ from blackjack_ai.config import Settings
 from blackjack_ai.engine import Card
 from blackjack_ai.engine import CardRank
 from blackjack_ai.engine import CardSuit
-from blackjack_ai.repository import SqliteGameRepository
+from blackjack_ai.persistence import SqliteGameRepository
 
 
 def make_card(rank: CardRank, suit: CardSuit) -> Card:
